@@ -7,37 +7,35 @@ global stencil_asm
 stencil_asm:   
     sub rsp, 8*11       
     
-    mov r12, rcx ; n
-    mov r13, rdx ; X
-    mov r14, r8  ; Y
+    ;n, x, y respectively
+    mov rsi, rcx 
+    mov rdx, rdx 
+    mov rdi, r8  
     
-    ; displacement variables
-    mov rbx, 3
-    mov r11, 0
+    ; variables
+    mov rcx, 3  
+    mov rax, 0 
 
 LOOP:
-    ; check if all elements of Y are identified
-    cmp r11, r12
+    cmp rax, rsi
     je end
     
-    ; stencil operation
-    movsd xmm5, [r13 - 24 + 8*rbx] 
-    addsd xmm5, [r13 - 16 + 8*rbx]
-    addsd xmm5, [r13 - 8 + 8*rbx]
-    addsd xmm5, [r13 + 8*rbx]
-    addsd xmm5, [r13 + 8 + 8*rbx]
-    addsd xmm5, [r13 + 16 + 8*rbx]
-    addsd xmm5, [r13 + 24 + 8*rbx]
+    ; stencil
+    movsd xmm5, [rdx - 24 + 8*rcx] 
+    addsd xmm5, [rdx - 16 + 8*rcx]
+    addsd xmm5, [rdx - 8 + 8*rcx]
+    addsd xmm5, [rdx + 8*rcx]
+    addsd xmm5, [rdx + 8 + 8*rcx]
+    addsd xmm5, [rdx + 16 + 8*rcx]
+    addsd xmm5, [rdx + 24 + 8*rcx]
     
-    ; store result in Y
-    movsd [r14 + 8*r11], xmm5
-    
-    inc rbx
-    inc r11
+    ; Y values
+    movsd [rdi + 8*rax], xmm5
+    inc rcx
+    inc rax
     jmp LOOP
 
 end:
     add rsp, 8*11
-    mov rax, r14 ; return Y
-
+    mov rax, rdi
     ret       
