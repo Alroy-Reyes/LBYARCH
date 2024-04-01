@@ -21,21 +21,21 @@ LOOP:
     je end
     
     ; stencil
-    movsd xmm5, [rdx - 24 + 8*rcx] 
-    addsd xmm5, [rdx - 16 + 8*rcx]
-    addsd xmm5, [rdx - 8 + 8*rcx]
-    addsd xmm5, [rdx + 8*rcx]
-    addsd xmm5, [rdx + 8 + 8*rcx]
-    addsd xmm5, [rdx + 16 + 8*rcx]
-    addsd xmm5, [rdx + 24 + 8*rcx]
+    movsd xmm5, [rdx-24+8*rcx] 
+    addsd xmm5, [rdx-16+8*rcx]
+    addsd xmm5, [rdx-8+8*rcx]
+    addsd xmm5, [rdx+8*rcx]
+    addsd xmm5, [rdx+8+8*rcx]
+    addsd xmm5, [rdx+16+8*rcx]
+    addsd xmm5, [rdx+24+8*rcx]
     
     ; Y values
-    movsd [rdi + 8*rax], xmm5
+    movsd [rdi+8*rax], xmm5
     inc rcx
     inc rax
-    jmp LOOP
+    jmp SHORT LOOP
 
 end:
     add rsp, 8*11
-    mov rax, rdi
-    ret       
+    mov rdx, rdi
+    ret      
