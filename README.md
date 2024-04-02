@@ -10,6 +10,11 @@ Y[i] = X[i-3] + X[i-2] + X[i-1] + X[i] + X[i+1] + X[i+2] + X[i+3]
 
 AVERAGE EXECUTION TIME
 
+In getting the average excecution time, we get the execution time of the different sizes in C and assembly language. We ran the program 30 times in two different modes: Debug Mode and Release Mode.
+
+This is the first 10 execution times in Debug Mode:
+
+<img width="643" alt="image" src="https://github.com/Alroy-Reyes/LBYARCH/assets/98019015/e82fb580-5400-453b-b8ce-b0f1a358aca6">
 
 
 Analysis of Results
