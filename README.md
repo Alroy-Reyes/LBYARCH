@@ -58,6 +58,10 @@ Final Average
 
 <h2>Analysis of Results</h2>
 
+The analysis of the ASM and C kernels in both Debug and Release modes provide important information about how they behave in various compilation settings. Release mode is designed for optimal speed and frequently yields faster execution times, whereas Debug mode provides extra checks and debug information to help with debugging and issue identification. These results underline the necessity of selecting the proper compilation mode in accordance with the particular requirements of the program, highlighting the trade-off between debugging capabilities and performance optimization. 
+
+Release mode usually offers better performance because it has optimizations that Debug mode does not have. This observation raises the possibility that compiler-specific optimizations or intrinsic complexity may prevent ASM kernels from completely benefiting from these enhancements. This suggests that there is a more complex relationship between assembly code and low-level optimizations, with some optimizations not producing the desired increases in performance for ASM procedures.
+
 
 
 
