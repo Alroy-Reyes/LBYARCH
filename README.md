@@ -9,7 +9,10 @@ Y[i] = X[i-3] + X[i-2] + X[i-1] + X[i] + X[i+1] + X[i+2] + X[i+3]
 -X is the inputted array/ random value initialized
 -Y output array of the result of the stencil operation
 
-<h2>AVERAGE EXECUTION TIME</h2>
+
+
+<h2>Comparative Analysis</h2>
+<h3>Average Execution Time</h3>
 
 In getting the average excecution time, we get the execution time of the different sizes in C and assembly language. We ran the program 30 times in two different modes: Debug Mode and Release Mode.
 
@@ -37,4 +40,24 @@ First 10 execution times
 Final Average
 
 <img width="278" alt="image" src="https://github.com/Alroy-Reyes/LBYARCH/assets/98019015/556e0a1b-0035-48ed-8586-8a876c4c8f02">
+
+
+
+<h2>Outputs</h2>
+
+Debug Mode
+
+<img width="880" alt="image" src="https://github.com/Alroy-Reyes/LBYARCH/assets/98019015/703aa2eb-ea38-4fee-ae6a-d060ae388e12">
+
+
+Release Mode
+
+<img width="877" alt="image" src="https://github.com/Alroy-Reyes/LBYARCH/assets/98019015/69689e5d-717a-44f3-a683-75f94112c9ce">
+
+
+
+<h2>Analysis of Results</h2>
+
+
+
 
