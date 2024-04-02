@@ -19,7 +19,7 @@ In getting the average excecution time, we get the execution time of the differe
 
 <h3>Debug Mode</h3>
 
-<h4>First 10 execution times</h4>
+First 10 execution times
 
 <img width="643" alt="image" src="https://github.com/Alroy-Reyes/LBYARCH/assets/98019015/e82fb580-5400-453b-b8ce-b0f1a358aca6">
 
