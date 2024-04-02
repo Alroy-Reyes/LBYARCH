@@ -2,7 +2,7 @@
 Reyes, Alroy Leon
 Reynado, Alyza
 
-<h2>Operation:</h2>
+<h2>Operation</h2>
 Y[i] = X[i-3] + X[i-2] + X[i-1] + X[i] + X[i+1] + X[i+2] + X[i+3]
 
 -i index of the elements of X and Y
