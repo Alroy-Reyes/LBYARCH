@@ -14,6 +14,8 @@ AVERAGE EXECUTION TIME
 
 Analysis of Results
 Debug Mode
+
+
 <img width="277" alt="image" src="https://github.com/Alroy-Reyes/LBYARCH/assets/98019015/1c8f7ba9-aa72-4965-b261-cfd5707b9c3f">
 
 Release Mode
